@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyThuVienConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyThuVienConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyThuVien.Properties.Settings.GlobalReference.Default.QuanLyThuVienConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_DSPTHUTableAdapter" GeneratorDataComponentClassName="v_DSPTHUTableAdapter" Name="v_DSPTHU" UserDataComponentName="v_DSPTHUTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyThuVienConnectionString (Settings)" DbObjectName="QuanLyThuVien.dbo.v_DSPTHU" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Mã phiếu thu], [Tên độc giả], [Tổng nợ ], [Số tiền thu], [Còn lại], [Ngày thu] FROM dbo.v_DSPTHU</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Mã phiếu thu" DataSetColumn="Mã phiếu thu" />
+              <Mapping SourceColumn="Tên độc giả" DataSetColumn="Tên độc giả" />
+              <Mapping SourceColumn="Tổng nợ " DataSetColumn="Tổng nợ " />
+              <Mapping SourceColumn="Số tiền thu" DataSetColumn="Số tiền thu" />
+              <Mapping SourceColumn="Còn lại" DataSetColumn="Còn lại" />
+              <Mapping SourceColumn="Ngày thu" DataSetColumn="Ngày thu" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_DSPTHU" msprop:Generator_TableClassName="v_DSPTHUDataTable" msprop:Generator_TableVarName="tablev_DSPTHU" msprop:Generator_TablePropName="v_DSPTHU" msprop:Generator_RowDeletingName="v_DSPTHURowDeleting" msprop:Generator_RowChangingName="v_DSPTHURowChanging" msprop:Generator_RowEvHandlerName="v_DSPTHURowChangeEventHandler" msprop:Generator_RowDeletedName="v_DSPTHURowDeleted" msprop:Generator_UserTableName="v_DSPTHU" msprop:Generator_RowChangedName="v_DSPTHURowChanged" msprop:Generator_RowEvArgName="v_DSPTHURowChangeEvent" msprop:Generator_RowClassName="v_DSPTHURow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mã_x0020_phiếu_x0020_thu" msprop:Generator_ColumnVarNameInTable="columnMã_phiếu_thu" msprop:Generator_ColumnPropNameInRow="Mã_phiếu_thu" msprop:Generator_ColumnPropNameInTable="Mã_phiếu_thuColumn" msprop:Generator_UserColumnName="Mã phiếu thu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tên_x0020_độc_x0020_giả" msprop:Generator_ColumnVarNameInTable="columnTên_độc_giả" msprop:Generator_ColumnPropNameInRow="Tên_độc_giả" msprop:Generator_ColumnPropNameInTable="Tên_độc_giảColumn" msprop:Generator_UserColumnName="Tên độc giả">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tổng_x0020_nợ_x0020_" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTổng_nợ_" msprop:Generator_ColumnPropNameInRow="Tổng_nợ_" msprop:Generator_ColumnPropNameInTable="Tổng_nợ_Column" msprop:Generator_UserColumnName="Tổng nợ " type="xs:double" minOccurs="0" />
+              <xs:element name="Số_x0020_tiền_x0020_thu" msprop:Generator_ColumnVarNameInTable="columnSố_tiền_thu" msprop:Generator_ColumnPropNameInRow="Số_tiền_thu" msprop:Generator_ColumnPropNameInTable="Số_tiền_thuColumn" msprop:Generator_UserColumnName="Số tiền thu" type="xs:double" minOccurs="0" />
+              <xs:element name="Còn_x0020_lại" msprop:Generator_ColumnVarNameInTable="columnCòn_lại" msprop:Generator_ColumnPropNameInRow="Còn_lại" msprop:Generator_ColumnPropNameInTable="Còn_lạiColumn" msprop:Generator_UserColumnName="Còn lại" type="xs:double" minOccurs="0" />
+              <xs:element name="Ngày_x0020_thu" msprop:Generator_ColumnVarNameInTable="columnNgày_thu" msprop:Generator_ColumnPropNameInRow="Ngày_thu" msprop:Generator_ColumnPropNameInTable="Ngày_thuColumn" msprop:Generator_UserColumnName="Ngày thu" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_DSPTHU" />
+      <xs:field xpath="mstns:Mã_x0020_phiếu_x0020_thu" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
